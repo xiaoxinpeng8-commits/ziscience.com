@@ -1,0 +1,36 @@
+字游 · GitHub Pages 发布说明
+
+这是包含七个交互板块的最新完整版本，无须编译或安装程序依赖。
+
+1. 下载并安装 GitHub Desktop：https://desktop.github.com/
+   登录 GitHub 账号 xiaoxinpeng8-commits。
+2. GitHub Desktop：File > New repository。
+   Name 填 ziyou，Local path 选择你想保存的位置；可勾选 Initialize this repository with a README；Git ignore 和 License 保持 None。
+   点击 Create repository。
+3. 点击 Repository > Show in Explorer，打开刚创建的 ziyou 文件夹。
+4. 解压本发布包，把里面的所有文件及 art、assets 两个文件夹复制到上述 ziyou 文件夹中。
+   如果提示 README.md 重名，可替换。
+   关键：打开 ziyou 文件夹时应直接看到 index.html；不要再套一层文件夹，也不要只放 ZIP。
+5. 返回 GitHub Desktop，左下角 Summary 填“发布字游交互网页”，点击 Commit to main。
+   如果按钮显示其他分支名，记住该分支名称，后面的 Pages 设置使用相同分支。
+6. 点击 Publish repository；取消勾选 Keep this code private，点击 Publish repository。
+   这样会创建公开仓库，网页代码和素材可被访问。
+7. 点击 Repository > View on GitHub。在仓库网页中进入 Settings > Pages。
+8. Build and deployment：Source 选 Deploy from a branch。
+   Branch 选 main（或第5步实际分支），目录选 / (root)，点击 Save。
+9. 等待发布完成，刷新 Pages 页面；出现 Your site is live at 后，打开该页面给出的地址。
+   如仓库名为 ziyou、账号仍为 xiaoxinpeng8-commits，预计网址为：
+   https://xiaoxinpeng8-commits.github.io/ziyou/
+   请以 GitHub 页面实际显示的地址为准。
+
+更新网页：覆盖本地仓库中的对应文件 → Commit to main → Push origin。
+
+常见问题：
+- 404：先看仓库 Actions 中的 pages build and deployment 是否成功；确认 Pages 分支与目录正确。
+- 只有 README：index.html 很可能放进了额外一层文件夹，移到仓库第一层再提交。
+- 字样或图片缺失：检查 art、assets 文件夹是否完整上传，不要改动文件名或目录层级。
+- 不要用双击 index.html 判断功能是否完整：字库需要通过网页地址加载。
+
+官方说明：
+https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
